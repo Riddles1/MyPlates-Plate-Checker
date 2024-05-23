@@ -7,11 +7,16 @@ import pandas as pd
 import re
 
 
-DATA_LOCATION = r"C:\Users\ridle\OneDrive\Desktop\personal_code_projects\Myplates Project\Words Database\Urban Words.csv"
+#make this the location of the words database
+DATA_LOCATION = r"Words Database\Urban Words.csv"
+#make this the location of your chrome driver
+CHROME_DRIVER_LOCATION = r'chrome-win64\chrome-win64\chrome.exe'
+
+
 df = pd.read_csv(DATA_LOCATION)
 
 # Path to the Chrome browser executable
-chrome_path = r'C:\Users\ridle\OneDrive\Desktop\personal_code_projects\Sportsbet\chrome-win64\chrome-win64\chrome.exe'
+chrome_path = CHROME_DRIVER_LOCATION
 # Set Chrome options
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location = chrome_path
