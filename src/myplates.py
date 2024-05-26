@@ -5,12 +5,12 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import pandas as pd
 import re
-
+import os.path
 
 #make this the location of the words database
-DATA_LOCATION = r"Words Database\Urban Words.csv"
+DATA_LOCATION = os.path.join('..', '.config', 'Urban Words.csv')
 #make this the location of your chrome driver
-CHROME_DRIVER_LOCATION = r'chrome-win64\chrome-win64\chrome.exe'
+CHROME_DRIVER_LOCATION = os.path.join('..', '..', 'chrome-win64', 'chrome-win64', 'chrome.exe')
 
 
 df = pd.read_csv(DATA_LOCATION)
