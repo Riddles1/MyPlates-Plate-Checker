@@ -9,4 +9,4 @@ This python script is designed to feed a large volume of words/combinations thro
 + Put all the plates that you want to check in the "Word" column
 + Inside myplates.py, input the file location of this csv and the file location of your version of Chrome's web driver (this is necessary for selenium to work)
 
-<img align="center" alt="MyPlates Plate Enterer" width="800" src="media/gif.gif">
+<img align="center" alt="MyPlates Plate Enterer" width="800" src="res\automation_gif.gif">

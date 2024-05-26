@@ -60,7 +60,6 @@ CLICK("/html/body/app-root/app-home/app-body/div[2]/div/div/div/div/div[1]/div/a
 def find_next_word_to_do():
     i = 0
     availability_list = df["Availability"]
-    print(availability_list[:20])
     for i in range(len(availability_list)):
         if availability_list[i] == False or availability_list[i] == True:
             i+=1
